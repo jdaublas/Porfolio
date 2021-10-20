@@ -1,5 +1,6 @@
 :root {
   --branding-color: #6c63ff;
+  --default-font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -21,7 +22,7 @@ h2 {
 }
 
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font-family);
   font-size: 16px;
   line-height: 30px;
 }
@@ -42,10 +43,30 @@ p {
 }
 
 .hero h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font-family);
   line-height: 2;
   font-weight: normal;
   font-size: 24px;
+}
+
+/*******about section******/
+
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.about-section-content {
+  margin: 30px;
 }
 
 .btn-branding {
@@ -55,6 +76,7 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
+  text-decoration: none;
 }
 
 .btn-branding-outline {
@@ -72,21 +94,24 @@ p {
 }
 
 @media (max-width: 800px) {
-  h1{
+  h1 {
     font-size: 44px;
   }
 
-  h2{
+  h2 {
     font-size: 44px;
   }
 
-  .hero{
+  .hero {
     padding: 80px 20px;
   }
   .project-description {
     padding: 0;
     text-align: center;
   }
-}
-  
+
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
 }
